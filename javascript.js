@@ -94,6 +94,8 @@ function troubleshooting() {
 const resultValue = troubleshooting()
 console.log(resultValue)
 
+
+
 //Exercise 2
 /**
  * The code below tells the browser to ask you for a number
@@ -115,6 +117,8 @@ function numberChecker() {
 const messageNumberChecker = numberChecker()
 console.log(messageNumberChecker)
 
+
+
 //Exercise 3
 /**
  * Lets do some math!
@@ -128,7 +132,7 @@ const b = "22 times three"
 const c = "the *remainder* of 5/4"
 const d = "the variable 'a' minus 17"
 const e = "the sum of the previous four variables"
-*/
+
 const a = 1 + 8
 const b = 22 * 3
 const c = 5 % 4
@@ -137,6 +141,8 @@ const e = a + b + c + d
 
 const modules = [a, b, c, d, e]
 console.log(modules)
+
+
 
 //Exercise 4
 /**
@@ -151,7 +157,7 @@ console.log(modules)
   
   After making your prediction, press 'Run' at the top and look at the output in the console. If you were surprised by anything, go back and look at the code to see what's going on.
 
-*/
+
 
 // code to be deleted
 const birthYear = 1948;
@@ -195,6 +201,15 @@ console.log(greeting);
 
 //===== Your code goes here =================
 
+const birthYear = 1991
+const currentDate = new Date()
+const fisrtName = "Hippolit"
+const lastName = "a Lakály"
+const age = currentDate.getFullYear() - birthYear
+
+const greeting = `Hi everybody! My Name is ${fisrtName} ${lastName} and I am ${age} years old`
+
+console.log(greeting)
 
 /*
 
@@ -236,8 +251,20 @@ module.exports = {
   firstName,
   lastName
 }
+*/
 
+let user = {
+  testGroup: "a",
+  greeting,
+  birthYear,
+  currentDate,
+  fisrtName,
+  lastName
+}
 
+console.log(user)
+
+/*
 // Test Step 3: (Don't forget to comment out lines under Test Step 2)
 
 // module.exports = {
@@ -251,3 +278,18 @@ module.exports = {
 // 	age
 // }
 */
+
+const fullName = `${fisrtName} ${lastName}`
+
+user = {
+  testGroup: "b",
+  greeting,
+  birthYear,
+  currentDate,
+  fisrtName,
+  lastName,
+  fullName,
+  age,
+}
+
+console.log(user)
